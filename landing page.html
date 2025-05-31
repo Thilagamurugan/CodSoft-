@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: darkblue;
+      color: white;
+      font-weight: bold;
+    }
+    .container {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background: white;
+      color: darkblue;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .features {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .feature-box {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .feature-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: white;
+    }
+    .feature-box p {
+      color: white;
+      font-weight: bold;
+    }
+    .marquee {
+      margin-top: 60px;
+      font-size: 18px;
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 12s linear infinite;
+    }
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Landing Page</h1>
+    <p>Your gateway to creativity and coding!</p>
+    <button class="btn">Learn More</button>
+
+    <div class="features">
+      <div class="feature-box">
+        <div class="feature-title">Easy to Learn</div>
+        <p>Perfect for beginners learning HTML and CSS.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-title">Creative Design</div>
+        <p>Apply your imagination and build unique layouts.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-title">Responsive</div>
+        <p>Looks great on both mobile and desktop devices.</p>
+      </div>
+    </div>
+
+    <div class="marquee">
+      <span>@ 2025 MY LANDING PAGE | ALL RIGHTS RESERVED</span>
+      </br>
+      <span>Created by THILAGAVATHY</span>
+      </br>
+    </div>
+  </div>
+</body>
+</html>
